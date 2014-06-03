@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCListData.h"
 
 @interface CCViewController : UIViewController
+
+//actions
+- (IBAction)addToListButtonPressed:(UIButton *)sender;
+
+
+- (IBAction)showListButtonPressed:(UIButton *)
+sender;
+
+//outlets
+@property (strong, nonatomic) IBOutlet UILabel *listLabel;
+@property (strong, nonatomic) IBOutlet UITextField *enteredObjectsOnListTextField;
 
 @end

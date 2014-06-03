@@ -7,6 +7,7 @@
 //
 
 #import "CCViewController.h"
+#import "CCListData.h" 
 
 @interface CCViewController ()
 
@@ -26,4 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+- (IBAction)addToListButtonPressed:(UIButton *)sender
+{
+    self.listLabel.text = self.enteredObjectsOnListTextField.text; 
+}
+
+- (IBAction)showListButtonPressed:(UIButton *)sender {
+}
 @end
